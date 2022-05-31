@@ -1,12 +1,9 @@
-from typing import List, Any
+nums = [1,1,1,1,1]
+runningSum = []
+current_sum = 0
 
-nums = [2, 3, 4]
-newnumlist = []
-sum = 0
-i = 0
 for num in nums:
-    sum = sum + num
-    newnumlist[i] = sum
-    i+= 1
-# return nums
-print(newnumlist)
+    current_sum += num
+    runningSum.append(current_sum)
+
+print(runningSum)
